@@ -5,34 +5,34 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Impact of GST on Indian SMEs",
+    category: "Research Paper",
+    tools: "Presented at National Commerce Conference",
+    image: "", // Use empty or generic
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    title: "Financial Literacy Trainer",
+    category: "Sankalp Foundation NGO",
+    tools: "Workshops on finance basics & budgeting",
+    image: "",
   },
   {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
+    title: "Star Performer Award",
+    category: "Recognition at Work",
+    tools: "98% accuracy across 150+ CMA reports",
+    image: "",
   },
   {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
+    title: "Debate Winner",
+    category: "Extracurricular",
+    tools: "Topic: Cryptocurrency - Future or Fad?",
+    image: "",
   },
   {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "Yoga Workshop Coordinator",
+    category: "Atmabodh Yoga Sansthan",
+    tools: "Mental health sessions for 100+ participants",
+    image: "",
   },
 ];
 
@@ -115,7 +115,13 @@ const Work = () => {
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">
-                      <WorkImage image={project.image} alt={project.title} />
+                      {project.image ? (
+                        <WorkImage image={project.image} alt={project.title} />
+                      ) : (
+                        <div className="placeholder-image">
+                          <h3>{project.title}</h3>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

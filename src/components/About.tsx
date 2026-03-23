@@ -6,11 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Full Stack Developer with 4+ years of experience building scalable web
-          applications using React.js, Angular, Next.js, Node.js, and NestJS. Skilled
-          in microservices architecture, CMS development, and low-code platforms.
-          Passionate about creating high-performance, production-ready solutions
-          from concept to deployment.
+          Dedicated and detail-oriented personality with hands-on experience in banking, taxation, and financial analysis. Skilled in credit assessment, due diligence, and compliance, I seek to leverage my expertise in a dynamic financial role. With a strong analytical mindset and a commitment to ethical financial practices, I aim to contribute to a forward-thinking organization while continuously enhancing my knowledge in finance.
         </p>
       </div>
     </div>
